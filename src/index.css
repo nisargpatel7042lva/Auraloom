@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF4081;
+  --primary-dark: #F50057;
+  --background: #0A0A0A;
+  --surface: #1E1E1E;
+  --surface-low: #141414;
+  --text: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --gradient-start: #FF4081;
+  --gradient-end: #651FFF;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 6px;
+  border: 3px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+body {
+  @apply bg-background text-text font-poppins;
+  background-color: var(--background);
+}
